@@ -100,7 +100,7 @@
 }
 
 .box-hero {
-  background-image: url("./_imgs/hero-image.png");
+  background-image: url("./imgs/hero-image.png");
   background-size: cover;
   background-position: center;
   height: calc(100vh - 100px - 50px);
@@ -203,7 +203,7 @@
 }
 
 .box-equip-container-card-fotoA, .box-equip-container-card-fotoB, .box-equip-container-card-fotoC, .box-equip-container-card-fotoD, .box-equip-container-card-fotoE, .box-equip-container-card-fotoF {
-  background-image: url("./_imgs/guilherme.jpg");
+  background-image: url("./imgs/guilherme.jpg");
   background-size: cover;
   background-position: center;
   height: calc(100vw/2 - 40px);
@@ -219,25 +219,25 @@
 }
 
 .box-equip-container-card-fotoB {
-  background-image: url("./_imgs/juliane.jpeg");
+  background-image: url("./imgs/juliane.jpeg");
   background-position: top;
 }
 
 .box-equip-container-card-fotoC {
-  background-image: url("./_imgs/vanessa.jpeg");
+  background-image: url("./imgs/vanessa.jpeg");
 }
 
 .box-equip-container-card-fotoD {
-  background-image: url("./_imgs/brian.jpeg");
+  background-image: url("./imgs/brian.jpeg");
   background-position: top;
 }
 
 .box-equip-container-card-fotoE {
-  background-image: url("_imgs/barbara.jpeg");
+  background-image: url("./imgs/barbara.jpeg");
 }
 
 .box-equip-container-card-fotoF {
-  background-image: url("./_imgs/mateus.jpg");
+  background-image: url("./imgs/mateus.jpg");
 }
 
 .box-footer {
