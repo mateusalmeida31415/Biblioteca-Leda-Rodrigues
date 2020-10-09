@@ -92,7 +92,7 @@
 
 // Menu com a imagem
 .box-hero{
-    background-image: url("/_imgs/hero-image.png");
+    background-image: url("./_imgs/hero-image.png");
     background-size: cover;
     background-position: center;
     height: calc(100vh - 100px - 50px);
@@ -162,7 +162,7 @@
             flex-direction: column;
             width: calc(100vw/2);
             &-fotoA{
-                background-image: url("_imgs/guilherme.jpg");
+                background-image: url("./_imgs/guilherme.jpg");
                 background-size: cover;
                 background-position: center;
                 height: calc(100vw/2 - 40px);
@@ -177,16 +177,16 @@
             }
             &-fotoB{
                 @extend .box-equip-container-card-fotoA;
-                background-image: url("_imgs/juliane.jpeg");
+                background-image: url("./_imgs/juliane.jpeg");
                 background-position: top;
             }
             &-fotoC{
                 @extend .box-equip-container-card-fotoA;
-                background-image: url("_imgs/vanessa.jpeg");
+                background-image: url("./_imgs/vanessa.jpeg");
             }
             &-fotoD{
                 @extend .box-equip-container-card-fotoA;
-                background-image: url("_imgs/brian.jpeg");
+                background-image: url("./_imgs/brian.jpeg");
                 background-position: top;
             }
             &-fotoE{
@@ -195,7 +195,7 @@
             }
             &-fotoF{
                 @extend .box-equip-container-card-fotoA;
-                background-image: url("_imgs/mateus.jpg");
+                background-image: url("./_imgs/mateus.jpg");
             }
         }
     }
