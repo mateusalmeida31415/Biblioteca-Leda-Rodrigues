@@ -1,0 +1,328 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+}
+
+@mixin flex() {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+// titulo e logo
+.box-title{
+   @include flex();
+   width: 100%;
+   background-color: #F7CE41;
+   height: 100px;
+
+   // Texto com o nome da biblioteca
+   &-text{
+       font-size:1.3rem;
+       text-align: center;
+       color:  #1A292F;
+       margin: 5px 10px 5px 5px;
+   }
+
+    // Logo da biblioteca
+    &-logo{
+        height: 50px;
+        width: 50px;
+        margin: 5px 5px 5px 10px;
+    }
+}
+
+// Barra com o menu hamburger
+.box-navegation{
+    background-color: #1A292F;
+    @include flex();
+    justify-content: flex-end;
+    height: 50px;
+    //Menu moveu
+    .hide-menu{
+        position: absolute;
+        top: 100px;
+        width: 0px;
+        overflow: hidden;
+    }
+
+    // Icon para mostrar o menu de opções
+    &-icon{
+        font-size: 2.6rem;
+        position: relative;
+        padding-right: 10px;
+        cursor: pointer;
+        color: #F7CE41;
+    }
+    
+    &-menu{
+        width: 100vw;
+        text-align: center;
+        background-color: #1A292F;
+        z-index: 1;
+        &-open-menu-btn{
+            animation: slide .5s linear 0s 1 forwards;
+        }
+        &-close{
+            position: absolute;
+            cursor: pointer;
+            color: #F7CE41;
+            font-size: 2.6rem;   
+            right: 10px;     
+        }
+        &-item{
+            list-style-type: none;
+            padding: 10px 0px;
+            text-align: center;
+
+            //Item chave
+            .principal{
+                font-size: 1.25rem;
+            }
+
+            &-link{
+                text-decoration: none;
+                color: #F7CE41;
+            }
+        }
+    }
+}
+
+// Menu com a imagem
+.box-hero{
+    background-image: url("/_imgs/hero-image.png");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 100px - 50px);
+    width: 100vw;
+    @include flex();
+
+    // Esse elemento contem o background e a frase 
+    .box-hero-box{
+        position: absolute;
+        width: 80%;
+        @include flex();
+
+        // Esse a cor de fundo com o canal alpha reducido
+        .box-hero-box-background{
+            position: absolute;
+            background-color:  #1A292F99;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        // Esse é a frase inspiradora
+        .box-hero-box-frase{
+            color: white;
+            position: relative;
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+            color: #F7CE41;
+        }
+    }
+}
+
+// Esse é a parte sobre um pouco da história da leda
+.box-principal{
+    background-color: #F7CE41;
+
+    // Título principal desse campo
+    &-title{
+        padding: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #1A292F;
+    }
+
+    // Historia da professora leda
+    &-text{
+        padding: 10px;
+        text-align: justify;
+        color: #1A292F;
+    }
+}
+
+.box-equip{
+    background-color: #1A292F;
+    padding-bottom: 10px;
+    &-title{
+        color: #F7CE41;
+        text-align: center;
+        padding: 10px;
+    }
+    &-container{
+        @include flex();
+        flex-wrap: wrap;
+        &-card{
+            @include flex();
+            flex-direction: column;
+            width: calc(100vw/2);
+            &-fotoA{
+                background-image: url("_imgs/guilherme.jpg");
+                background-size: cover;
+                background-position: center;
+                height: calc(100vw/2 - 40px);
+                width: calc(100vw/2 - 40px);
+                border-radius: 50%;
+            }
+            &-name{
+                color: white;
+                text-align: center;
+                color: #F7CE41;
+                padding: 10px;
+            }
+            &-fotoB{
+                @extend .box-equip-container-card-fotoA;
+                background-image: url("_imgs/juliane.jpeg");
+                background-position: top;
+            }
+            &-fotoC{
+                @extend .box-equip-container-card-fotoA;
+                background-image: url("_imgs/vanessa.jpeg");
+            }
+            &-fotoD{
+                @extend .box-equip-container-card-fotoA;
+                background-image: url("_imgs/brian.jpeg");
+                background-position: top;
+            }
+            &-fotoE{
+                @extend .box-equip-container-card-fotoA;
+                background-image: url("_imgs/barbara.jpeg");
+            }
+            &-fotoF{
+                @extend .box-equip-container-card-fotoA;
+                background-image: url("_imgs/mateus.jpg");
+            }
+        }
+    }
+
+}
+
+.box-footer{
+    @include flex();
+    flex-wrap: wrap;;
+    //flex-direction: column;
+    //align-items: flex-start;
+    background-color: #0B1713;
+    &-address{
+        width: calc(100vw/2);
+        padding: 10px;
+        &-title{
+            padding: 10px;
+            text-align: left;
+            color: #F7CE41
+        }
+        &-content{
+            padding: 0px 0px 0px 10px;
+            text-align: left;
+            color: #F7CE41;
+        }
+    }
+    &-contact{
+        width: calc(100vw/2);
+        padding: 0px 10px 10px;
+        &-title{
+            padding: 10px;
+            color: #F7CE41;
+        }
+        &-content{
+            padding: 0px 0px 0px 10px;
+            text-align: left;
+            color: #F7CE41;
+            overflow: hidden;
+        }
+    }
+    &-logos{
+        @include flex();
+        justify-content: space-around;
+        width: 100vw;
+        .iconify{
+            color: #F7CE41;
+            padding: 10px;
+            margin: 0px 10px;
+            height: 70px;
+            width: 70px;
+        }
+    }
+}
+
+@keyframes slide{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 600px){
+
+    .box-title{
+        
+        // Texto com o nome da biblioteca
+        &-text{
+            font-size:2rem;
+        }
+     
+         // Logo da biblioteca
+         &-logo{
+             height: 100px;
+             width: 100px;
+         }
+     }
+
+    .box-hero{
+        // Esse elemento contem o background e a frase 
+        .box-hero-box{
+            // Esse a cor de fundo com o canal alpha reducido
+            .box-hero-box-background{
+
+            }
+    
+            // Esse é a frase inspiradora
+            .box-hero-box-frase{
+                
+                font-size: 2.5rem;
+                
+            }
+        }
+    }
+
+    .box-principal{
+    
+        // Título principal desse campo
+        &-title{
+            font-size: 2rem;
+        }
+    
+        // Historia da professora leda
+        &-text{
+            font-size: 1.5rem;
+            padding: 0px 40px 10px;
+        }
+    }
+
+    .box-equip{
+        &-title{
+            font-size: 2rem;
+        }
+        &-container{
+            @include flex();
+            flex-wrap: wrap;
+            &-card{
+                width: calc(100vw/3);
+                &-fotoA{
+                    height: calc(100vw/3 - 40px);
+                    width: calc(100vw/3 - 40px);
+                }
+                &-name{
+                   font-size: 1.5rem;
+                }
+            }  
+        } 
+    } 
+}
