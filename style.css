@@ -327,7 +327,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   .box-title-text {
     font-size: 2rem;
   }
@@ -361,11 +361,11 @@
         flex-wrap: wrap;
   }
   .box-equip-container-card {
-    width: calc(100vw/3);
+    width: calc(100vw/3 - 5px);
   }
   .box-equip-container-card-fotoA, .box-equip-container-card-fotoB, .box-equip-container-card-fotoC, .box-equip-container-card-fotoD, .box-equip-container-card-fotoE, .box-equip-container-card-fotoF {
-    height: calc(100vw/3 - 40px);
-    width: calc(100vw/3 - 40px);
+    height: calc(100vw/5);
+    width: calc(100vw/5);
   }
   .box-equip-container-card-name {
     font-size: 1.5rem;

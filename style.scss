@@ -259,7 +259,7 @@
     }
 }
 
-@media only screen and (min-width: 600px){
+@media all and (min-width: 600px){
 
     .box-title{
         
@@ -314,10 +314,10 @@
             @include flex();
             flex-wrap: wrap;
             &-card{
-                width: calc(100vw/3);
+                width: calc(100vw/3 - 5px);
                 &-fotoA{
-                    height: calc(100vw/3 - 40px);
-                    width: calc(100vw/3 - 40px);
+                    height: calc(100vw/5);
+                    width: calc(100vw/5);
                 }
                 &-name{
                    font-size: 1.5rem;
