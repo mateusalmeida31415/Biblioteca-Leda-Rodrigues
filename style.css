@@ -174,7 +174,7 @@ body {
 .box-equip-title {
   color: #F7CE41;
   text-align: center;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
 }
 
 .box-equip-container {
@@ -377,6 +377,66 @@ body {
   }
   .box-equip-container-card-name {
     font-size: 1.5rem;
+  }
+  .box-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #0B1713;
+  }
+  .box-footer-address {
+    width: calc(100vw/3);
+    padding: 10px;
+  }
+  .box-footer-address-title {
+    padding: 10px;
+    text-align: left;
+    color: #F7CE41;
+  }
+  .box-footer-address-content {
+    padding: 0px 0px 0px 10px;
+    text-align: left;
+    color: #F7CE41;
+  }
+  .box-footer-contact {
+    width: calc(100vw/3);
+    padding: 0px 10px 10px;
+  }
+  .box-footer-contact-title {
+    padding: 10px;
+    color: #F7CE41;
+  }
+  .box-footer-contact-content {
+    padding: 0px 0px 0px 10px;
+    text-align: left;
+    color: #F7CE41;
+    overflow: hidden;
+  }
+  .box-footer-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  .box-footer-logos .iconify {
+    color: #F7CE41;
+    padding: 10px;
+    margin: 0px 10px;
+    height: 70px;
+    width: 70px;
   }
 }
 /*# sourceMappingURL=style.css.map */
