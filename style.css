@@ -52,8 +52,8 @@
 .box-navegation .hide-menu {
   position: absolute;
   top: 100px;
-  width: 0px;
-  overflow: hidden;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
 }
 
 .box-navegation-icon {
@@ -311,19 +311,23 @@
 
 @-webkit-keyframes slide {
   0% {
-    width: 0px;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
   }
   100% {
-    width: 100vw;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
   }
 }
 
 @keyframes slide {
   0% {
-    width: 0px;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
   }
   100% {
-    width: 100vw;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
   }
 }
 
