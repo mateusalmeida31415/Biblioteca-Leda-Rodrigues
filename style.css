@@ -6,6 +6,10 @@
   font-family: 'Cinzel', serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .box-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,8 +76,8 @@
 }
 
 .box-navegation-menu-open-menu-btn {
-  -webkit-animation: slide .5s linear 0s 1 forwards;
-          animation: slide .5s linear 0s 1 forwards;
+  -webkit-animation: slide .75s linear 0s 1 forwards;
+          animation: slide .75s linear 0s 1 forwards;
 }
 
 .box-navegation-menu-close {

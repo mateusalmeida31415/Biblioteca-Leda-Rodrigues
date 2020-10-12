@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Cinzel', serif;
 }
-
+body{
+    //position: absolute;
+    overflow-x: hidden;
+}
 @mixin flex() {
     display: flex;
     align-items: center;
@@ -62,7 +65,7 @@
         background-color: #1A292F;
         z-index: 1;
         &-open-menu-btn{
-            animation: slide .5s linear 0s 1 forwards;
+            animation: slide .75s linear 0s 1 forwards;
         }
         &-close{
             position: absolute;
