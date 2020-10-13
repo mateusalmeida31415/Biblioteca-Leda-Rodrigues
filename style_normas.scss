@@ -1,0 +1,59 @@
+@mixin flex() {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-hero{
+    background-image: url("./imgs/hero-image.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100vw;
+    @include flex();
+
+    // Esse elemento contem o background e a frase 
+    .box-hero-box{
+        position: absolute;
+        width: 80%;
+        @include flex();
+
+        // Esse a cor de fundo com o canal alpha reducido
+        .box-hero-box-background{
+            position: absolute;
+            background-color:  #1A292F99;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        // Esse é a frase inspiradora
+        .box-hero-box-frase{
+            color: white;
+            position: relative;
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px;
+            color: #F7CE41;
+        }
+    }
+}
+
+.box-principal:nth-of-type(3){
+    //background-color: #1A292F;
+
+    // Título principal desse campo
+    &-title{
+        padding: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #F7CE41;
+    }
+
+    // Historia da professora leda
+    &-text{
+        padding: 10px;
+        text-align: justify;
+        color: #F7CE41;
+    }
+}
