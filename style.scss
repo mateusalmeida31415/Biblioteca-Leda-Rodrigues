@@ -77,6 +77,9 @@ body{
             list-style-type: none;
             padding: 10px 0px;
             text-align: center;
+            &:hover{
+                background-color: #00000044;
+            }
 
             //Item chave
             .principal{
@@ -141,7 +144,7 @@ body{
 
     // Historia da professora leda
     &-text{
-        padding: 10px;
+        padding: 10px 40px 40px;
         text-align: justify;
         color: #1A292F;
     }

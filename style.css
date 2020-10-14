@@ -94,6 +94,10 @@ body {
   text-align: center;
 }
 
+.box-navegation-menu-item:hover {
+  background-color: #00000044;
+}
+
 .box-navegation-menu-item .principal {
   font-size: 1.25rem;
 }
@@ -161,7 +165,7 @@ body {
 }
 
 .box-principal-text {
-  padding: 10px;
+  padding: 10px 40px 40px;
   text-align: justify;
   color: #1A292F;
 }
