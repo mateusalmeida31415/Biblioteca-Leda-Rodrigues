@@ -39,21 +39,19 @@
     }
 }
 
-.box-principal:nth-of-type(3){
-    //background-color: #1A292F;
-
+.box-principal{
     // Título principal desse campo
     &-title{
-        padding: 10px;
+        
         font-size: 1.2rem;
         text-align: center;
-        color: #F7CE41;
+        color: #1A292F;
     }
 
     // Historia da professora leda
     &-text{
-        padding: 10px;
+        padding: 40px;
         text-align: justify;
-        color: #F7CE41;
+        color: #1A292F;
     }
 }

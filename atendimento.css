@@ -1,7 +1,7 @@
 .box-hero {
-  background-image: url("./imgs/hero-image.png");
+  background-image: url("./imgs/atendimento.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 200px;
   width: 100vw;
   display: -webkit-box;

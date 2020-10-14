@@ -1,5 +1,5 @@
 .box-hero {
-  background-image: url("./imgs/hero-image.png");
+  background-image: url("./imgs/normas.jpg");
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -45,7 +45,7 @@
 }
 
 .box-principal-title {
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
   color: #1A292F;
 }
